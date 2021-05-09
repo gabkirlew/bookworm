@@ -40,13 +40,40 @@ function Review() {
         <div>
             
                 <form className="todo-form" onSubmit={handleSubmit}>
-                    <textarea 
+                    <textarea
+                    rows="5" 
+                    cols="50" 
                     type='text' 
                     placeholder='Tell us your thoughts about the book.'
                     //value={input}
-                    name='text'
+                    name='reviewtext'
                     onChange={handleChange}
                     />
+                    <br></br>
+                    <br></br>
+                    <p>On a scale of 1-5, how woudl you rate this book?</p>
+                    <select
+                    required
+                    name = "star_rating" 
+                    onChange={handleChange}>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br></br>
+
+                    <p>Would you recommend this book to a friend?</p>
+                    <select
+                    required
+                    name = "recommendation" 
+                    onChange={handleChange}>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br></br>
+                    <br></br>
                     <button type = "submit">Submit your review!</button>
                 </form>
             

@@ -1,8 +1,8 @@
 
 import bookimage from './becoming.png';
 import Review from './Review';
-// import Navigation from './Navigation';
-import Component from 'react';
+import Navigation from './Navigation';
+import Navbar from './components/Navbar/Navbar'
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   return (
     
     <div>
-      {/* <Navigation /> */}
+      <Navbar />
     <h1>Title: Becoming</h1>
     <img src={bookimage} alt="bookimage" />
     <h2>Author: Michelle Obama</h2>

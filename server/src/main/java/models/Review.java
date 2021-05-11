@@ -1,14 +1,18 @@
 package models;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class Review {
 
+    private @GeneratedValue @Id
+    Integer id;
     private String reviewText;
     private String recommendation;
     private String score;
-    private Integer id;
+
 
     public Review(){
 
